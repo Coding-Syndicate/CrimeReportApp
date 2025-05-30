@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crimeRprtPage1Styles.css">
+    <title>SA Crime Emergency report</title>
+</head>
+<body>
+    <header "></header>
+    <nav id="navbar" hidden>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+    
+        <main >
+        <span id="heading">
+            <legend class="heading"><h2>PLEASE PROVIDE DETAILS OF INCIDENT BELOW</h2>
+            <sup><i>(press the space before the button for more info on crime)</i></sup></legend>
+        </span>
+        
+        <article id="emergencyType">
+
+            <section id="contactCrimes" title="These involve direct physical harm or the threat of harm to individuals.">
+                <details>
+                    <li>
+                            <ul>Murder</ul>
+                            <ul>Attempted murder</ul>
+                            <ul>Sexual offences (e.g. rape, sexual assault)</ul>
+                            <ul>Assault with the intent to inflict grievous bodily harm (GBH)</ul>
+                            <ul>Common assault</ul>
+                            <ul>Common robbery</ul>
+                            <ul>Robbery with aggravating circumstances</ul>
+                            <ul>GBV(Gender Based Violence)</ul>
+                        </li>
+                    <summary>
+                        <label for="contactCrimesBtn">1. Contact Crimes (Crimes Against the Person)</h2></label><button id="contactCrimesBtn">SELECT</button>
+                    </summary>
+                </details>
+            </section>
+
+            <section id="contactRelatedCrimes" title="These involve crimes that often accompany or lead to contact crimes.">
+                <details>
+                    <li>
+                        <ul>Arson</ul>
+                        <ul>Malicious damage to property</ul>
+                    </li>
+                    <summary>
+                        <label for="contactRelatedCrimesBtn">2. Contact-Related Crimes</h2></label><button id="contactRelatedCrimesBtn">SELECT</button>
+                    </summary>
+                </details>
+            </section>
+
+            <section id="propertyCrimes" title="These are crimes where property is the main target, typically without direct harm to individuals.">
+                <details>
+                    <li>
+                        <ul>Theft</ul>
+                        <ul>Burglary(at residential premises & non-residential premises)</ul>
+                        <ul>Shoplifting</ul>
+                        <ul>Motor vehicle theft</ul>
+                        <ul>Stock theft(livestock theft)</ul>
+                        <!--<ul>Cybercrime (e.g. hacking, identity theft)</ul>-->
+                    </li>
+                    <summary>
+                        <label for="propertyRelatedCrimesBtn">3. Property-Related Crimes</h2></label><button id="propertyRelatedCrimesBtn">SELECT</button>
+                    </summary>
+                </details>
+            </section>
+
+            <section id="policeDetectedCrimes" title="These are typically uncovered through police operations and not by civilian reports.">
+                <details>
+                    <li>
+                        <ul>Illegal possession of firearms and ammunition</ul>
+                        <ul>Drug-related crimes</ul>
+                        <ul>Driving under the influence of alcohol or drugs</ul>
+                        <ul>Sexual offenses detected as a result of police action</ul>
+                        <ul>Robbery with aggravating circumstances</ul>
+                    </li>
+                    <summary>
+                        <label for="policeDetectedbtn">4. Crimes Detected as a Result of Police Action</h2></label><button id="policeDetectedbtn">SELECT</button>
+                    </summary>
+                </details>
+            </section>
+
+            <section id="policeDetectedCrimes" title="These are typically uncovered through police operations and not by civilian reports.">
+                <details>
+                    <li>
+                        <ul>Rape</ul>
+                        <ul>Sexual assault</ul>
+                        <ul>Attempted sexual offences</ul>
+                        <ul>Contact sexual offences</ul>
+                        
+                    </li>
+                    <summary>
+                        <label for="policeDetectedbtn">5. Sexual Offences</h2></label><button id="policeDetectedbtn">SELECT</button>
+                    </summary>
+                </details>
+            </section>
+
+            <section id="otherCrimes" title="These are serious crimes that do not fall neatly into the above categories.">
+                <details>
+                    <li>
+                        <ul>All other theft not mentioned above</ul>
+                        <ul>Commercial crime (e.g. fraud, embezzlement)</ul>
+                        <ul>Shoplifting</ul>
+                        
+                    </li>
+                    <summary>
+                        <label for="otherCrimes">6. Other Serious Crimes</h2></label><button id="policeDetectedbtn">SELECT</button>
+                    </summary>
+                </details>
+            </section>
+        </article>
+        <br>
+        
+        <br>
+        <article id="contacts">
+            <section id="emergency" title="Security and Hospital contacts">
+                <fieldset>
+                <legend class="contactsBox">Personal Emergency Contacts</legend>                    
+                <dl class="EmergencyContacts">
+                <dd>
+                    <label for="chosenHospital">Hospital : </label><input type="tel" name="personalHospital" id="chosenHospital" >
+                    <a href="tel:" id="hospitalNumber" hidden>000 000 0000</a>
+                </dd>
+                <dd>
+                    <label for="chosenSecurity">Security : </label><input type="tel" name="" id="chosenSecurity">
+                <a href="tel:" id="securityNumbers" hidden>111 111 1111</a>
+                </dd>
+                </dl>
+                </fieldset>
+            </section>
+            <br>  
+            
+            <section>
+                <fieldset>
+                <legend class="contactsBox">Public Emergency Contacts</legend>
+                <dl class="publicEmergencyContacts">
+            
+                    <dd><b>Hospital/Clinic</b> : <a href="tel:080029999">0800 029 999</a></ul>
+                    <dd><b>Security/Police</b> : <a href="tel:0860010111">086 001 0111</a></ul>
+                
+                </dl>
+                </fieldset>
+            </section>
+        </article>
+    </main>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 SA Crime Emergency Report. For further information visit our website : <a href="https://www.saps.gov.za">Home page of the SAPS Internet</a>.</p>
+    </footer>
+</body>
+</html>

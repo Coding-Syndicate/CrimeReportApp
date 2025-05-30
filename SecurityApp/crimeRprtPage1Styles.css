@@ -1,0 +1,130 @@
+/* This file contains the styles for the Crime Report Page 1 */
+/*============================================================================*/
+
+/*UNI*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 1rem ;
+}
+html{
+    font-size: 16px; /* Base font size */
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+
+    background-image: url('images/photoshoped/Police-crime-intelligence.png');
+    background-size: cover; /* Cover the entire viewport */
+    
+}
+
+/*OUTER*/
+
+body{
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 150vh;
+
+    line-height: 2;
+
+    background-image: url('images/photoshoped/SAPS-1-1200x675.png');
+    background-size: auto;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-origin: content-box;
+    background-position: center;
+
+    background-color: #f4f4f4;
+    color: #333;
+
+    border: #0056b3 solid 5px;
+
+}
+
+footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 50px;
+
+    background-color:black ;
+    
+    border: 5px inset #0b0b0b;
+
+}
+main{
+    border: #0056b3 solid 5px;
+    border-radius: 50px;
+    padding: 50px;
+}
+/*MID*/
+details{
+    margin: 20px;
+    padding: 10px;
+    padding-left: 25px;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    width: 100%;
+}
+fieldset{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    border: 5px solid blue;
+    border-radius: 5px;
+}
+summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+fieldset,legend.contactsBox{
+    border: 1px solid rgb(207, 8, 8);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    background-color: #f9f9f9;
+}
+/*INNER*/
+legend{
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #333;
+
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+button{
+    padding: 10px 20px;
+
+    background-color: #007bff;
+    color: white;
+    border: 5px inset #0056b3;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    display: inline-flex;
+    justify-content:end ;
+}
