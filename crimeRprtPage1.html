@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="South African Crime Emergency Reporting Application">
+    <link rel="stylesheet" href="crimeRprtPage1Styles.css">
+    <title>SA Crime Emergency Report</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/photoshoped/SAPS_badge.svg.png" class="saps-logo" alt="South African Police Service logo">
+            <h1>SA Crime Emergency Report</h1>
+            <img src="images/photoshoped/SAFlag.png" class="sa-flag" alt="South African flag">
+        </div>
+    </header>
+    
+    <nav id="navbar" aria-label="Main navigation">
+        <ul>
+            <li><a href="#emergencyType">Report Crime</a></li>
+            <li><a href="#contacts">Emergency Contacts</a></li>
+            <li><a href="https://www.saps.gov.za" target="_blank">SAPS Website</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="heading" aria-labelledby="incident-heading">
+            <h2 id="incident-heading">PLEASE PROVIDE DETAILS OF INCIDENT BELOW</h2>
+            <p class="instruction">(Click on crime categories for more information)</p>
+        </section>
+        
+        <article id="emergencyType" aria-labelledby="incident-heading">
+            <section class="crime-category" id="contactCrimes" title="These involve direct physical harm or the threat of harm to individuals.">
+                <details>
+                    <summary>
+                        <h3>1. Contact Crimes (Crimes Against the Person)</h3>
+                        <button class="select-btn" aria-label="Select Contact Crimes">SELECT</button>
+                    </summary>
+                    <ul class="crime-list">
+                        <li>Murder</li>
+                        <li>Attempted murder</li>
+                        <li>Sexual offenses (e.g. rape, sexual assault)</li>
+                        <li>Assault with intent to inflict grievous bodily harm (GBH)</li>
+                        <li>Common assault</li>
+                        <li>Common robbery</li>
+                        <li>Robbery with aggravating circumstances</li>
+                        <li>GBV (Gender Based Violence)</li>
+                    </ul>
+                </details>
+            </section>
+
+            <section class="crime-category" id="contactRelatedCrimes" title="These involve crimes that often accompany or lead to contact crimes.">
+                <details>
+                    <summary>
+                        <h3>2. Contact-Related Crimes</h3>
+                        <button class="select-btn" aria-label="Select Contact-Related Crimes">SELECT</button>
+                    </summary>
+                    <ul class="crime-list">
+                        <li>Arson</li>
+                        <li>Malicious damage to property</li>
+                    </ul>
+                </details>
+            </section>
+
+            <section class="crime-category" id="propertyCrimes" title="These are crimes where property is the main target, typically without direct harm to individuals.">
+                <details>
+                    <summary>
+                        <h3>3. Property-Related Crimes</h3>
+                        <button class="select-btn" aria-label="Select Property-Related Crimes">SELECT</button>
+                    </summary>
+                    <ul class="crime-list">
+                        <li>Theft</li>
+                        <li>Burglary (residential & non-residential premises)</li>
+                        <li>Shoplifting</li>
+                        <li>Motor vehicle theft</li>
+                        <li>Stock theft (livestock theft)</li>
+                    </ul>
+                </details>
+            </section>
+
+            <section class="crime-category" id="policeDetectedCrimes" title="These are typically uncovered through police operations and not by civilian reports.">
+                <details>
+                    <summary>
+                        <h3>4. Crimes Detected as a Result of Police Action</h3>
+                        <button class="select-btn" aria-label="Select Police-Detected Crimes">SELECT</button>
+                    </summary>
+                    <ul class="crime-list">
+                        <li>Illegal possession of firearms and ammunition</li>
+                        <li>Drug-related crimes</li>
+                        <li>Driving under the influence of alcohol or drugs</li>
+                        <li>Sexual offenses detected as a result of police action</li>
+                        <li>Robbery with aggravating circumstances</li>
+                    </ul>
+                </details>
+            </section>
+
+            <section class="crime-category" id="sexualOffences" title="Sexual offence crimes">
+                <details>
+                    <summary>
+                        <h3>5. Sexual Offences</h3>
+                        <button class="select-btn" aria-label="Select Sexual Offences">SELECT</button>
+                    </summary>
+                    <ul class="crime-list">
+                        <li>Rape</li>
+                        <li>Sexual assault</li>
+                        <li>Attempted sexual offences</li>
+                        <li>Contact sexual offences</li>
+                    </ul>
+                </details>
+            </section>
+
+            <section class="crime-category" id="otherCrimes" title="These are serious crimes that do not fall neatly into the above categories.">
+                <details>
+                    <summary>
+                        <h3>6. Other Serious Crimes</h3>
+                        <button class="select-btn" aria-label="Select Other Serious Crimes">SELECT</button>
+                    </summary>
+                    <ul class="crime-list">
+                        <li>All other theft not mentioned above</li>
+                        <li>Commercial crime (e.g. fraud, embezzlement)</li>
+                        <li>Shoplifting</li>
+                    </ul>
+                </details>
+            </section>
+        </article>
+        
+        <article id="contacts">
+            <section class="emergency-contacts" aria-labelledby="personal-contacts-heading">
+                <fieldset>
+                    <legend id="personal-contacts-heading">Personal Emergency Contacts</legend>
+                    <div class="contact-field">
+                        <label for="chosenHospital">Hospital:</label>
+                        <input type="tel" id="chosenHospital" name="personalHospital" placeholder="Enter hospital number">
+                        <a href="tel:" class="hidden-link" id="hospitalNumber">000 000 0000</a>
+                    </div>
+                    <div class="contact-field">
+                        <label for="chosenSecurity">Security:</label>
+                        <input type="tel" id="chosenSecurity" name="personalSecurity" placeholder="Enter security number">
+                        <a href="tel:" class="hidden-link" id="securityNumbers">111 111 1111</a>
+                    </div>
+                </fieldset>
+            </section>
+            
+            <section class="emergency-contacts" aria-labelledby="public-contacts-heading">
+                <fieldset>
+                    <legend id="public-contacts-heading">Public Emergency Contacts</legend>
+                    <ul class="public-contacts-list">
+                        <li><strong>Hospital/Clinic:</strong> <a href="tel:080029999" class="emergency-link">0800 029 999</a></li>
+                        <li><strong>Security/Police:</strong> <a href="tel:0860010111" class="emergency-link">086 001 0111</a></li>
+                    </ul>
+                </fieldset>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 SA Crime Emergency Report. For further information visit our website:
+            <a href="https://www.saps.gov.za" target="_blank" rel="noopener noreferrer">Home page of the SAPS Internet</a>.
+        </p>
+    </footer>
+</body>
+</html>
